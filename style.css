@@ -15,6 +15,7 @@ body {
 .stage-bar {
   border-bottom: 1px solid lightgray;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .stage-title {
   width: calc(100% / 3);
@@ -29,6 +30,31 @@ body {
 }
 .center{
   min-height: 200px;
+}
+.piece {
+  float: left;
+  padding: 0 4px;
+  margin: 10px 0;
+}
+.piece:first-child{
+  padding-left: 0;
+}
+.piece:last-of-type{
+  padding-right: 0;
+}
+label {
+  float: left;
+  margin-bottom: 8px;
+}
+input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 6px;
+  border: 1px solid lightgray;
+}
+input:focus {
+  outline: 0;
+  border: 1px solid #999;
 }
 .btn{
   float: right;
@@ -46,3 +72,7 @@ body {
 .fade {
   opacity: .2;
 }
+
+/* Sizes */
+.s70 {width: 70%}
+.s30 {width: 30%}
