@@ -15,7 +15,6 @@ body {
 .stage-bar {
   border-bottom: 1px solid lightgray;
   overflow: hidden;
-  margin-bottom: 30px;
 }
 .stage-title {
   width: calc(100% / 3);
@@ -31,16 +30,22 @@ body {
 .center{
   min-height: 200px;
 }
+.row {
+  margin: 15px 0;
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+.row:last-of-type {
+  margin-bottom: 0;
+}
 .piece {
   float: left;
-  padding: 0 4px;
+  padding-left: 8px;
   margin: 10px 0;
 }
 .piece:first-child{
   padding-left: 0;
-}
-.piece:last-of-type{
-  padding-right: 0;
 }
 label {
   float: left;
@@ -53,6 +58,17 @@ input {
   border: 1px solid lightgray;
 }
 input:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+select {
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid lightgray;
+  background-color: white;
+  height: 32px;
+}
+select:focus {
   outline: 0;
   border: 1px solid #999;
 }
@@ -69,8 +85,12 @@ input:focus {
   color: #777;
   background-color: #ddd;
 }
+.left {
+  float: left;
+}
 .fade {
   opacity: .2;
+  pointer-events: none;
 }
 
 /* Sizes */
