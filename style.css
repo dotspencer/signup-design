@@ -1,0 +1,48 @@
+*{box-sizing: border-box;}
+body {
+  background-color: whitesmoke;
+  font-family: 'system-ui', sans-serif;
+}
+.content {
+  margin: 10vh auto 0;
+  max-width: 500px;
+  background-color: white;
+  box-shadow: 0 0 4px -2px black;
+  border-radius: 4px;
+  padding: 30px;
+  overflow: hidden;
+}
+.stage-bar {
+  border-bottom: 1px solid lightgray;
+  overflow: hidden;
+}
+.stage-title {
+  width: calc(100% / 3);
+  float: left;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+  pointer-events: none;
+}
+.stage-title.active {
+  border-color: #f77a52;
+}
+.center{
+  min-height: 200px;
+}
+.btn{
+  float: right;
+  color: #888;
+  background-color: #eee;
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .15s;
+}
+.btn:hover{
+  color: #777;
+  background-color: #ddd;
+}
+.fade {
+  opacity: .2;
+}
